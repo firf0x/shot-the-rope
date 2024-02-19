@@ -10,7 +10,7 @@ public class Rope : MonoBehaviour
     private List<Material> mat = new List<Material>{};
     private int minValue = 0;
 
-    private void Awake() {
+    private void Start() {
         SetMaterial();
     }  
     private void SetMaterial()
