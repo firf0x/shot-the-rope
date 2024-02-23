@@ -7,8 +7,7 @@ public class SpawnFirstLVL : MonoBehaviour
     public List<GameObject> objects = new List<GameObject>{};
     public Transform SpawnPosition;
 
-
-    private void Awake() {
+    private void Start() {
         SpawnLVL();
     }
 

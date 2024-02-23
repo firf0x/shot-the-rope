@@ -10,10 +10,10 @@ public class Rope : MonoBehaviour
     private List<Material> mat = new List<Material>{};
     private int minValue = 0;
 
-    private void Start() {
+    private void Awake() {
         SetMaterial();
     }  
-    private void SetMaterial()
+    public void SetMaterial()
     {
         int index = 0;
         index = Random.Range(minValue, mat.Count);

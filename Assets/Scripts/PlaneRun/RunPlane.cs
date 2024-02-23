@@ -10,14 +10,18 @@ public class RunPlane : MonoBehaviour
     [SerializeField]
     private float min;
     [SerializeField]
-    private float max;
+    public float max;
     private Rigidbody rb;
 
     [SerializeField]
     private RunPlane plane;
 
+
     private void Start() {
+        plane = GetComponent<RunPlane>();
+        plane.enabled = false;
         gameObject.transform.position = new Vector3(0,0,min);
+        max = 40;
     }
     private void FixedUpdate() {
         gameObject.transform.position = new Vector3(0,0,Mathf.Clamp(gameObject.transform.position.z, min, max));
@@ -26,6 +30,7 @@ public class RunPlane : MonoBehaviour
         {
             plane.enabled = false;
         }
+
     }
 
 }
