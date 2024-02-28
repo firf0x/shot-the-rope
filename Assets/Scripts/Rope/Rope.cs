@@ -7,7 +7,7 @@ public class Rope : MonoBehaviour
     [SerializeField]
     private Randomint random;
     [SerializeField]
-    private List<Material> mat = new List<Material>{};
+    public List<Material> mat = new List<Material>{};
     private int minValue = 0;
 
     private void Awake() {

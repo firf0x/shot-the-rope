@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - LVL
+  - Rope
+  - Shoot
+  - Arrow
   layers:
   - Default
   - TransparentFX
